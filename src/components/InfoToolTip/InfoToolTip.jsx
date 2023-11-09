@@ -45,7 +45,7 @@ function InfoTooltip () {
   function handleButtonClick() {
     setTimerProperties('timer__background', 'timer__text')
     setFigureVisible('figure_visible')
-    setCountdown(10)
+    setCountdown(20)
     setIsOpen(false)
     setFirstUpdate(true)
     setTimeout(()=> {
