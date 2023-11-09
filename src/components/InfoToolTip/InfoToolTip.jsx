@@ -45,11 +45,11 @@ function InfoTooltip () {
   function handleButtonClick() {
     setTimerProperties('timer__background', 'timer__text')
     setFigureVisible('figure_visible')
+    setCountdown(10)
+    setCounter(0)
     setIsOpen(false)
     setFirstUpdate(true)
     setTimeout(()=> {
-      setCountdown(10)
-      setCounter(0)
       setPopupType('popup-finish')
     }, 500)
   }
