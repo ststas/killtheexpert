@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   overflow: hidden;
-  position: relative;
+  position: fixed;
   background-image: url(../../images/background_city.png);
   background-repeat: no-repeat;
   background-position: center;
