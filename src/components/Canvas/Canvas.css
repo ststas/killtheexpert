@@ -5,6 +5,8 @@
   min-height: 100%;
   overflow: hidden;
   position: fixed;
+  top: 0;
+  left: 0;
   background-image: url(../../images/background_city.png);
   background-repeat: no-repeat;
   background-position: center;
