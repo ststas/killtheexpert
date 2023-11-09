@@ -12,7 +12,7 @@
 .page {
   min-width: 540px;
   max-width: 1366px;
-  max-height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   font-family: 'Press Start 2P', 'Helvetica Neue', Arial, sans-serif;
   text-rendering: optimizeLegibility;
