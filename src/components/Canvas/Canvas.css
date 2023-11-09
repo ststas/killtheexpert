@@ -1,0 +1,19 @@
+.canvas {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(../../images/background_city.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.canvas__game-area {
+  margin: auto auto 170px 0 ;
+  width: calc(100% - 170px);
+  height: 15vh;
+  position: relative;
+}

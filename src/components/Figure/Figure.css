@@ -1,0 +1,48 @@
+.figure {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  min-height: 170px;
+}
+.figure:hover {
+  cursor: pointer;
+}
+.figure_invisible {
+  opacity: 0;
+}
+.figure_visible {
+  opacity: 1;
+}
+.figure__boss {
+  width: 84px;
+  min-height: 131px;
+  filter: saturate(1.3);
+}
+.figure__boss_opacity {
+  opacity: 0.7;
+}
+.figure__badboss_disappear {
+  opacity: 0;
+  transform: translateY(-800px);
+  transition: all 0.7s ease-in;
+}
+.figure__goodboss_disappear {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s ease-in;
+}
+.figure__goodboss_bubble {
+  background-image: url(../../images/bubble_fault.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.figure__badboss_bubble {
+  background-image: url(../../images/bubble.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

@@ -1,0 +1,45 @@
+.timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 300px;
+  height: 100px;
+  
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 30px 0 auto;
+}
+
+.timer__background {
+  background-image: url(../../images/counter_background.svg);
+}
+
+.timer__background-red {
+  background-image: url(../../images/counter_background_red.svg);
+}
+
+.timer__image {
+  width: 20%;
+  height: 60%;
+}
+
+.timer__text {
+  padding: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 36px;
+  color: black;
+  text-align: center;
+}
+
+.timer__text-red {
+  padding: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 36px;
+  color: #F14338;
+  text-align: center;
+}
