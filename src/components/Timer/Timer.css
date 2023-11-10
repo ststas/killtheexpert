@@ -3,9 +3,8 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  min-width: 300px;
-  height: 100px;
-  
+  width: 140px;
+  height: 50px;
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0 4.5% 0 auto;
@@ -20,16 +19,15 @@
 }
 
 .timer__image {
-  width: 20%;
-  height: 60%;
+  height: 50%;
 }
 
 .timer__text {
   padding: 0;
   margin: 0;
-  font-size: 36px;
-  font-weight: 900;
-  line-height: 36px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
   color: black;
   text-align: center;
 }
@@ -37,9 +35,85 @@
 .timer__text-red {
   padding: 0;
   margin: 0;
-  font-size: 36px;
-  font-weight: 900;
-  line-height: 36px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
   color: #F14338;
   text-align: center;
+}
+
+@media screen and (min-width: 540px) {
+
+  .timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 225px;
+    height: 80px; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 4.5% 0 auto;
+  }
+
+  
+
+  .timer__text {
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 28px;
+    color: black;
+    text-align: center;
+  }
+  
+  .timer__text-red {
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #F14338;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 300px;
+    height: 100px;    
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 4.5% 0 auto;
+  }
+
+  .timer__image {
+    height: 60%;
+  }
+
+  .timer__text {
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 36px;
+    color: black;
+    text-align: center;
+  }
+  
+  .timer__text-red {
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 36px;
+    color: #F14338;
+    text-align: center;
+  }
+  
 }

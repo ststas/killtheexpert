@@ -4,8 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  min-height: 170px;
+  width: 140px;
+  min-height: 140px;
 }
 .figure:hover {
   cursor: pointer;
@@ -17,8 +17,8 @@
   opacity: 1;
 }
 .figure__boss {
-  width: 84px;
-  min-height: 131px;
+  width: 69px;
+  min-height: 107px;
   filter: saturate(1.3);
 }
 .figure__boss_opacity {
@@ -45,4 +45,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+@media screen and (min-width: 540px) {
+  .figure {
+    width: 170px;
+    min-height: 170px;
+  }
+  .figure__boss {
+    width: 84px;
+    min-height: 131px;
+  }
 }

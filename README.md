@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# PROJECT KILL THE EXPERT (GAME DRAFT, FOR TABLETS AND LAPTOPS ONLY)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description & Functionality
+* Movies Explorer - is a web application providing a search & save movies service (movies database is provided by BeatFilm). Frontend part is developed using React.js. Backend part is based on Express.js.
+* Movies can be searched both English & Russian languages and filtered as "short-movies"/non "short-movies" on "Movies" page.
+* Liked (saved) movies are displayed on "Liked Movies" page. There are "Searching" & "Filter" features available as well on this page.
+* User's Name & E-mail can be updated via Profile page.
+* To sign up user has to provide name/e-mail/password at "Sign up" page.
+* To log in user has to provide e-mail/password at "Log in" page.
+* Main page contains general info about project & techs applied.
 
-## Available Scripts
+## Stack & Tools
+* Node.js, Express, React.js, HTML, CSS, REST API, JWT. 
 
-In the project directory, you can run:
+## My goal
+* improve skills in web app development and deployment, including frontend and backend development with React and Express, handling REST APIs, JWT, and working with Mongoose and MongoDB.
+* enhance application debugging.
+* improve skills in launching virtual machines (VMs) and server configuring incl. NGINX setup, domains attachment, SSL certificates issuance.
 
-### `npm start`
+## To run
+* download repository and install dependencies
+* to launch on local machine: 
+  * please reassgin PORT on backend to 3001 and turn off the CORS (see app.js)
+  * please reassign BASE_URL (auth.js) & apiUrl (api.js) on frontend as `http://127.0.0.1:3000`
+* to launch on a server, please use your own values for these variables
+* use `NPM START` to run frontend part
+* use `NPM START` to run backend part
+* please SIGN UP to explore the app. You can use fictional email & password to authorize.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Frontend
+* https://movie.nomoredomainsicu.ru/
+## Backend
+* https://api.movie.nomoredomainsicu.ru/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Stanislav Zaitsev х Yandex Practicum 
