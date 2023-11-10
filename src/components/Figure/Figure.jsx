@@ -3,7 +3,7 @@ import { GeneralContext } from "../../contexts/GeneralContext";
 import BadBoss from "../../images/badboss.png"
 import GoodBoss from "../../images/goodboss.png"
 
-function Figure () {
+function Figure ({timer}) {
   const { counter, setCounter, getRandomizer, figureVisible } = useContext(GeneralContext)
   const [topLeft, setTopLeft] = useState([getRandomizer()*100, getRandomizer()*100])
   const [badOrGood, setBadOrGood] = useState(getRandomizer()  >= 0.5 ? 'bad-boss' : 'good-boss')
@@ -30,7 +30,7 @@ function Figure () {
       setBossOpacity('')
       setBadOrGood(getRandomizer()  >= 0.5 ? 'bad-boss' : 'good-boss')
       setTopLeft([getRandomizer()*100, getRandomizer()*100])
-    }, 500)
+    }, timer)
   }
 
   return (

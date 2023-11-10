@@ -4,7 +4,7 @@ function Canvas () {
   return (
     <main className="canvas">
       <section className="canvas__game-area">
-        <Figure/>
+        <Figure timer={500}/>
       </section>
     </main>
   )
