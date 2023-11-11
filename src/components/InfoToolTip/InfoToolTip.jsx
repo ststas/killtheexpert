@@ -1,10 +1,13 @@
 import { useContext, useState, useEffect } from "react";
+import useSound from "use-sound";
 import { GeneralContext } from "../../contexts/GeneralContext";
 import ExpertImage from "../../images/expert.png";
 import fingerDown from "../../images/finger_down.svg";
 import fingerMid from "../../images/finger_mid.svg";
 import fingerUp from "../../images/finger_up.svg";
 import { textUp, textMid, textDown } from "../../utils/constants"
+import SoundTrack from "../../sounds/soundtrack.mp3"
+
 
 function InfoTooltip () {
   const { 
@@ -21,7 +24,7 @@ function InfoTooltip () {
   } = useContext(GeneralContext);
   const [fingerImage, setFingerImage] = useState()
   const [text, setText] = useState('')
-
+  const [play] = useSound(SoundTrack)
 
   useEffect (()=> {
     function setPopupProperties(counter) {
@@ -43,6 +46,7 @@ function InfoTooltip () {
   },[counter])
 
   function handleButtonClick() {
+    play()
     setTimerProperties('timer__background', 'timer__text')
     setFigureVisible('figure_visible')
     setCountdown(20)

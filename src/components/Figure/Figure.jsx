@@ -1,7 +1,10 @@
 import { useState, useContext, } from "react";
+import useSound from 'use-sound';
 import { GeneralContext } from "../../contexts/GeneralContext";
 import BadBoss from "../../images/badboss.png"
 import GoodBoss from "../../images/goodboss.png"
+import FX1 from "../../sounds/fx_fault.mp3"
+import FX2 from "../../sounds/fx_success.mp3"
 
 function Figure ({timer}) {
   const { counter, setCounter, getRandomizer, figureVisible } = useContext(GeneralContext)
@@ -10,16 +13,23 @@ function Figure ({timer}) {
   const [disappeared, setDisappeared] = useState('')
   const [bubble, setBubble] = useState('')
   const [bossOpacity, setBossOpacity] = useState('')
-
+  
   const imageBoss = badOrGood === 'bad-boss' ? BadBoss : GoodBoss
   const bossDisappeared = badOrGood === 'bad-boss' ? 'figure__badboss_disappear': 'figure__goodboss_disappear'
   const bossBubble = badOrGood === 'bad-boss' ? 'figure__badboss_bubble': 'figure__goodboss_bubble'
+  const [playFX1] = useSound(FX1, { volume: 0.8 })
+  const [playFX2] = useSound(FX2)
 
+  function play() {
+    badOrGood === 'bad-boss' ? playFX2() : playFX1()
+  }
+  
   function addCounter() {
     badOrGood === 'bad-boss' ? setCounter(counter + 1) : setCounter(counter)
   }
 
   function handleClick () {
+    play()
     addCounter()
     setDisappeared(bossDisappeared)
     setBubble(bossBubble)
